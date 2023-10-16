@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "C#: BookingManager.API [https]",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}\\BookingManager.API\\BookingManager.API.csproj",
+            "launchConfigurationId": "TargetFramework=;https"
+        }
+    ]
+}
