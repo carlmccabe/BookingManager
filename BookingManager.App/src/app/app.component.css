@@ -1,0 +1,11 @@
+button.booked-date-class {
+  display: none;
+}
+.image-gallery {
+  display: flex;
+  padding: 2px;
+}
+.image {
+  display: flex;
+  padding: 10px;
+}

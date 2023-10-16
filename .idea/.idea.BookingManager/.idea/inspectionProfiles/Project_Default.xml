@@ -1,0 +1,55 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="17">
+            <item index="0" class="java.lang.String" itemvalue="mat-header-cell" />
+            <item index="1" class="java.lang.String" itemvalue="mat-cell" />
+            <item index="2" class="java.lang.String" itemvalue="matcolumndef" />
+            <item index="3" class="java.lang.String" itemvalue="mat-header-row" />
+            <item index="4" class="java.lang.String" itemvalue="mat-row" />
+            <item index="5" class="java.lang.String" itemvalue="mat-table" />
+            <item index="6" class="java.lang.String" itemvalue="mat-button" />
+            <item index="7" class="java.lang.String" itemvalue="color" />
+            <item index="8" class="java.lang.String" itemvalue="mat-raised-button" />
+            <item index="9" class="java.lang.String" itemvalue="mat-dialog-title" />
+            <item index="10" class="java.lang.String" itemvalue="mat-dialog-content" />
+            <item index="11" class="java.lang.String" itemvalue="matinput" />
+            <item index="12" class="java.lang.String" itemvalue="mat-dialog-actions" />
+            <item index="13" class="java.lang.String" itemvalue="cdkfocusinitial" />
+            <item index="14" class="java.lang.String" itemvalue="matstartdate" />
+            <item index="15" class="java.lang.String" itemvalue="formcontrolname" />
+            <item index="16" class="java.lang.String" itemvalue="matenddate" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="15">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="mat-paginator" />
+            <item index="7" class="java.lang.String" itemvalue="mat-form-field" />
+            <item index="8" class="java.lang.String" itemvalue="mat-label" />
+            <item index="9" class="java.lang.String" itemvalue="mat-hint" />
+            <item index="10" class="java.lang.String" itemvalue="mat-datepicker-toggle" />
+            <item index="11" class="java.lang.String" itemvalue="mat-datepicker" />
+            <item index="12" class="java.lang.String" itemvalue="mat-date-range-input" />
+            <item index="13" class="java.lang.String" itemvalue="mat-error" />
+            <item index="14" class="java.lang.String" itemvalue="mat-date-range-picker" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

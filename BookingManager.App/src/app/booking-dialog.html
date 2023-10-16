@@ -1,0 +1,73 @@
+﻿<h1 mat-dialog-title>Make a Booking</h1>
+<div mat-dialog-content>
+  <div>
+    <h2>{{ data.room.name }}</h2>
+    <h3>{{ data.room.address }}</h3>
+    <p>{{ data.room.description }}</p>
+    <div class="image-gallery">
+      <div class="image" *ngFor="let imageUrl of data.room.images">
+        <img [src]="imageUrl" alt="Image">
+      </div>
+    </div>
+    <p>Max Capacity of {{ data.room.capacity }} People</p>
+    <p>Price: {{ data.room.price | currency: 'AUD' }} per Day </p>
+
+  </div>
+
+  <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        formControlName="emailFormControl"
+        placeholder="Enter email"
+      >
+
+      <mat-error *ngIf="emailFormControl.hasError('email') || emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Number of People</mat-label>
+      <input
+        type="number"
+        matInput
+        formControlName="numberFormControl"
+        placeholder="Enter the number of people"
+      >
+      <mat-error *ngIf="numberFormControl.hasError('max') || numberFormControl.hasError('min') || numberFormControl.hasError('required') ">
+        Number of people must be at least one and no more than {{ data.room.capacity }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Enter a date range</mat-label>
+      <mat-date-range-input
+        [formGroup]="bookingForm"
+        [rangePicker]="picker"
+      >
+        <input matStartDate formControlName="startDateFormControl" placeholder="Start date">
+        <input matEndDate formControlName="endDateFormControl" placeholder="End date">
+      </mat-date-range-input>
+      <mat-error *ngIf="startDateFormControl.hasError('matDatepickerParse') || startDateFormControl.hasError('required') || endDateFormControl.hasError('matDatepickerParse') || startDateFormControl.hasError('dateRangeContainsBookings') ">
+        Please check the dates selected are available for booking and valid
+      </mat-error>
+    </mat-form-field>
+
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker [dateClass]="dateClass" #picker></mat-date-range-picker>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onNoClick()">No Thanks</button>
+      <button mat-button color="accent" type="submit" >Confirm Booking</button>
+    </div>
+    <div *ngIf="bookingSuccess" class="success-message">
+      Booking was successful! <!-- Customize the message as needed -->
+    </div>
+    <div *ngIf="bookingError" class="success-message">
+      Booking was unsuccessful! Make sure you have the correct details <!-- Customize the message as needed -->
+    </div>
+  </form>
+</div>
