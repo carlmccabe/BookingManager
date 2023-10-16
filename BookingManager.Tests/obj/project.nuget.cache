@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Eudtm4ShpnKhdcTxfDjCZ7i2yyqm+h1bFw1Bhe+NTRu3rYz9qx+N2PgE5ETwsTq/GNYdR1jagDjsdRaM1K4nA==",
+  "dgSpecHash": "4ceCt2dfm2TMP2+iJMeEj9CyRPMgMpkIo25nxpPXOOR/jaTXOyTDhSjBMf/ci1jRYW3ZhoSb0acPSL0pIIh2Cw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carlh\\OneDrive\\Documents\\GitHub\\BookingManager\\tests\\BookingManager.Tests.csproj",
+  "projectFilePath": "C:\\Users\\carlh\\OneDrive\\Documents\\GitHub\\BookingManager\\BookingManager.Tests\\BookingManager.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carlh\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\carlh\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

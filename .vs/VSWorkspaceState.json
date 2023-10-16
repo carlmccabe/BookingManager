@@ -1,14 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\angularapp",
-    "\\angularapp\\src",
-    "\\angularapp\\src\\app",
-    "\\webapi",
-    "\\webapi\\Controllers",
-    "\\webapi\\Data",
-    "\\webapi\\Services"
+    ""
   ],
-  "SelectedNode": "\\angularapp\\src\\app\\booking-dialog.html",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
